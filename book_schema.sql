@@ -13,7 +13,10 @@ CREATE TABLE book(
     pages INT NOT NULL,
     genre ENUM('FICTION','ROMANCE','NARRATIVE','THRILLER','SCI_FI','MYSTERY','FANTASY','BIOGRAPHY','HISTORY','HORROR','ADVENTURE'),
     language ENUM('ENGLISH','HINDI','SPANISH','LATIN','FRENCH'),
-    binding ENUM('HARD','SOFT')
+    binding ENUM('HARD','SOFT'),
+    rating FLOAT,
+    reviewCnt INT,
+    createdAt TIMESTAMP
 ); 
 
 select * from book;
